@@ -1,0 +1,11 @@
+LOAD DATA
+INFILE Keywords.dat
+INTO TABLE Keywords
+REPLACE
+FIELDS TERMINATED BY '	'
+TRAILING NULLCOLS
+(
+advertiserId,
+keyword,
+bid
+)
